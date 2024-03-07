@@ -1,19 +1,15 @@
 package sk.wio.army;
 
+import sk.wio.*;
 import sk.wio.commands.*;
 
-public class SpecialForce extends Soldier implements Attacking {
-    public SpecialForce(String name, int damage) {
-        super(name, damage);
+public class SpecialForce extends Soldier {
+    public SpecialForce(String name, int damage, SoldierType type) {
+        super(name, damage, type);
     }
 
     @Override
-    public void report() {
-        System.out.println("Soldier " + getName() + " here. Type - " + SoldierType.OFFENSIVE);
-    }
-
-    @Override
-    public void attack() {
-        System.out.println("Special Force " + getName() + " deals " + getDamage());
+    public String toString() {
+        return "Special Force " + getName();
     }
 }

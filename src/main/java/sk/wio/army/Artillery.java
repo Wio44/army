@@ -1,24 +1,14 @@
 package sk.wio.army;
 
-import sk.wio.commands.*;
+import sk.wio.*;
 
-public class Artillery extends Soldier implements Attacking, Defending {
-    public Artillery(String name, int damage) {
-        super(name, damage);
+public class Artillery extends Soldier {
+    public Artillery(String name, int damage, SoldierType type) {
+        super(name, damage, type);
     }
 
     @Override
-    public void report() {
-        System.out.println("Soldier " + getName() + " here. Type - " + SoldierType.ADAPTABLE);
-    }
-
-    @Override
-    public void attack() {
-        System.out.println("Artillery " + getName() + " deals " + getDamage() + " damage");
-    }
-
-    @Override
-    public void defend() {
-        System.out.println("Artillery " + getName() + " deals " + getDamage() + " damage");
+    public String toString() {
+        return "Artillery " + getName();
     }
 }

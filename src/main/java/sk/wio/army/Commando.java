@@ -1,19 +1,15 @@
 package sk.wio.army;
 
+import sk.wio.*;
 import sk.wio.commands.*;
 
-public class Commando extends Soldier implements Attacking {
-    public Commando(String name, int damage) {
-        super(name, damage);
+public class Commando extends Soldier {
+    public Commando(String name, int damage, SoldierType type) {
+        super(name, damage, type);
     }
 
     @Override
-    public void report() {
-        System.out.println("Soldier " + getName() + " here. Type - " + SoldierType.OFFENSIVE);
-    }
-
-    @Override
-    public void attack() {
-        System.out.println("Commando " + getName() + " deals " + getDamage() + " damage");
+    public String toString() {
+        return "Commando " + getName();
     }
 }

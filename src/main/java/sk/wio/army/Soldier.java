@@ -1,13 +1,16 @@
 package sk.wio.army;
 
+import sk.wio.*;
+
 public abstract class Soldier {
     private final String name;
     private final int damage;
-    private SoldierType type;
+    private final SoldierType type;
 
-    public Soldier(String name, int damage) {
+    public Soldier(String name, int damage, SoldierType type) {
         this.name = name;
         this.damage = damage;
+        this.type = type;
     }
 
     public String getName() {
@@ -18,5 +21,12 @@ public abstract class Soldier {
         return damage;
     }
 
-    public abstract void report();
+    public SoldierType getType() {
+        return type;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " " + name;
+    }
 }
