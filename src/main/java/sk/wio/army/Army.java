@@ -6,14 +6,7 @@ import sk.wio.commands.*;
 import java.util.*;
 
 public class Army implements Attacking, Defending, Healthcare, DestructionOfInfrastructure {
-    private List<Soldier> soldiers = new ArrayList<>();
-
-    public Army(List<Soldier> soldiers) {
-        this.soldiers = soldiers;
-    }
-
-    public Army() {
-    }
+    private final List<Soldier> soldiers = new ArrayList<>();
 
     public void addSoldier(Soldier soldier) {
         this.soldiers.add(soldier);
