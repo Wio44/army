@@ -17,7 +17,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--------- ATTACK ----------");
         for (Soldier soldier : soldiers) {
             if (soldier.getType().equals(SoldierType.OFFENSIVE)) {
-                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage.");
             }
         }
     }
@@ -27,7 +27,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--- DEVASTATING ATTACK ----");
         for (Soldier soldier : soldiers) {
             if (soldier.getType().equals(SoldierType.OFFENSIVE) || soldier.getType().equals(SoldierType.ADAPTABLE)) {
-                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage.");
             }
         }
     }
@@ -37,7 +37,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--------- DEFEND ----------");
         for (Soldier soldier : soldiers) {
             if (soldier.getType().equals(SoldierType.DEFENSIVE) || soldier.getType().equals(SoldierType.ADAPTABLE)) {
-                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage.");
             }
         }
     }
@@ -48,7 +48,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
 
         for (Soldier soldier : soldiers) {
             if (soldier.getType().equals(SoldierType.MEDIC)) {
-                System.out.println(soldier + " provide health care");
+                System.out.println(soldier + " provide health care.");
             }
         }
     }
@@ -58,7 +58,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n------- DESTRUCTION OF INFRASTRUCTURE ------");
         for (Soldier soldier : soldiers) {
             if (soldier instanceof SpecialForce) {
-                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage.");
             }
         }
     }
