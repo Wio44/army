@@ -1,7 +1,7 @@
-package sk.wio.army;
+package sk.wio.army.medic;
 
 import sk.wio.*;
-import sk.wio.commands.*;
+import sk.wio.army.*;
 
 public class Medic extends Soldier {
     public Medic(String name, int damage, SoldierType type) {

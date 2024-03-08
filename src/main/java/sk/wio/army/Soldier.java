@@ -25,6 +25,10 @@ public abstract class Soldier {
         return type;
     }
 
+    public void reportSoldier() {
+        System.out.println("Soldier " + getName() + " here. Type " + getType());
+    }
+
     @Override
     public String toString() {
         return getName() + " " + name;

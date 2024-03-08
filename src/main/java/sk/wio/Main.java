@@ -1,6 +1,10 @@
 package sk.wio;
 
 import sk.wio.army.*;
+import sk.wio.army.adaptable.*;
+import sk.wio.army.defensive.*;
+import sk.wio.army.medic.*;
+import sk.wio.army.offensive.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,7 +40,6 @@ public class Main {
         army.addSoldier(specialForce1);
         army.addSoldier(specialForce2);
         army.addSoldier(specialForce3);
-
 
         army.report();
 
