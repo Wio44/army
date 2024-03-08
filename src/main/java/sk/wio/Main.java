@@ -19,8 +19,9 @@ public class Main {
         Artillery artillery2 = new Artillery("Artillery 2", 4, SoldierType.DEFENSIVE);
 
         Commando commando1 = new Commando("Commando 1", 5, SoldierType.OFFENSIVE);
-        Commando commando2 = new Commando("Commando 1", 5, SoldierType.OFFENSIVE);
-        Commando commando3 = new Commando("Commando 1", 5, SoldierType.OFFENSIVE);
+        Commando commando2 = new Commando("Commando 2", 5, SoldierType.OFFENSIVE);
+        Commando commando3 = new Commando("Commando 3q" +
+                "q", 5, SoldierType.OFFENSIVE);
 
         SpecialForce specialForce1 = new SpecialForce("Special Force 1", 6, SoldierType.OFFENSIVE);
         SpecialForce specialForce2 = new SpecialForce("Special Force 2", 6, SoldierType.OFFENSIVE);
