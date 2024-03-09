@@ -20,7 +20,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--------- ATTACK ----------");
         for (Soldier soldier : soldiers) {
             if (soldier instanceof Commando || soldier instanceof SpecialForce) {
-                System.out.println(soldier + " deals " + soldier.getDamage());
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
             }
         }
     }
@@ -30,7 +30,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--- DEVASTATING ATTACK ----");
         for (Soldier soldier : soldiers) {
             if (soldier instanceof Commando || soldier instanceof SpecialForce || soldier instanceof Infantry) {
-                System.out.println(soldier + " deals " + soldier.getDamage());
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
             }
         }
     }
@@ -40,7 +40,7 @@ public class Army implements Attacking, Defending, Healthcare, DestructionOfInfr
         System.out.println("\n\n--------- DEFEND ----------");
         for (Soldier soldier : soldiers) {
             if (soldier instanceof Artillery || soldier instanceof Infantry) {
-                System.out.println(soldier + " deals " + soldier.getDamage());
+                System.out.println(soldier + " deals " + soldier.getDamage() + " damage");
             }
         }
     }
